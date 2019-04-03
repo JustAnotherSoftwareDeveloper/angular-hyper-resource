@@ -1,18 +1,22 @@
 // Karma configuration
 // Generated on Tue Feb 04 2014 11:26:17 GMT-0500 (EST)
+const puppeteer = require('puppeteer');
+process.env.CHROME_BIN = puppeteer.executablePath();
+
 
 module.exports = function(config) {
   config.set({
-
+    basePath: '',
     // frameworks to use
     frameworks: ['jasmine'],
 
     // list of files / patterns to load in the browser
     files: [
-      'vendor/angular/angular.js',
-      'vendor/angular-resource/angular-resource.js',
-      'vendor/angular-mocks/angular-mocks.js',
-      './**/*.js',
+      './node_modules/angular/angular.js',
+      './node_modules/angular-resource/angular-resource.js',
+      './node_modules/angular-mocks/angular-mocks.js',
+      './angular-hyper-resource.js',
+      './angular-hyper-resource.spec.js',
     ],
 
     exclude: [],
@@ -27,8 +31,9 @@ module.exports = function(config) {
     port: 9876,
     colors: true,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['ChromeHeadless'],
     captureTimeout: 60000,
-    singleRun: false
+    singleRun: true,
+    plugins: ['karma-chrome-launcher','karma-jasmine']
   });
 };

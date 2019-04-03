@@ -1,6 +1,6 @@
 describe('The hal resource', function() {
 
-  beforeEach(module("hyperResource"));
+  beforeEach(angular.mock.module("hyperResource"));
 
   var hResource, $httpBackend;
   beforeEach(inject(function($injector) {

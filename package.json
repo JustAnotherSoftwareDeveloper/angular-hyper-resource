@@ -1,5 +1,5 @@
 {
-    "name" : "angular-hyper-resource",
+    "name": "angular-hyper-resource",
     "author": {
         "name": "Michael Sila",
         "email": "michael.sila.jobs@gmail.com",
@@ -13,7 +13,7 @@
         }
     ],
     "version": "0.0.1",
-    "description": "A one to one port of the bower package of the same name. Hypermedia resource library for AngularJS",
+    "description": "A  port of the bower package of the same name. Hypermedia resource library for AngularJS",
     "keywords": [
         "angularjs",
         "hal",
@@ -25,11 +25,18 @@
     "main": "angular-hyper-resource.js",
     "repository": "github:JustAnotherSoftwareDeveloper/angular-hyper-resource",
     "dependencies": {
-        "angular": "~1.2",
-        "angular-resource": "~1.2"
-      },
-      "devDependencies": {
-        "angular-mocks": "~1.2"
-      }
-
+        "angular": "1.7.8",
+        "angular-resource": "1.7.8"
+    },
+    "devDependencies": {
+        "angular-mocks": "1.7.8",
+        "jasmine-core": "^3.3.0",
+        "karma": "4.0.1",
+        "karma-chrome-launcher": "2.2.0",
+        "karma-jasmine": "2.0.1",
+        "puppeteer": "1.14.0"
+    },
+    "scripts": {
+        "test": "karma start karma.config.js"
+    }
 }
