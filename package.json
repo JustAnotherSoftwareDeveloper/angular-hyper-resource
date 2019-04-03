@@ -1,0 +1,35 @@
+{
+    "name" : "angular-hyper-resource",
+    "author": {
+        "name": "Michael Sila",
+        "email": "michael.sila.jobs@gmail.com",
+        "url": "https://github.com/JustAnotherSoftwareDeveloper"
+    },
+    "contributors": [
+        {
+            "name": "David Giese",
+            "email": "johndgiese@gmail.com",
+            "url": "https://github.com/johndgiese"
+        }
+    ],
+    "version": "0.0.1",
+    "description": "A one to one port of the bower package of the same name. Hypermedia resource library for AngularJS",
+    "keywords": [
+        "angularjs",
+        "hal",
+        "resource",
+        "restful",
+        "hyper"
+    ],
+    "license": "Apache-2.0",
+    "main": "angular-hyper-resource.js",
+    "repository": "github:JustAnotherSoftwareDeveloper/angular-hyper-resource",
+    "dependencies": {
+        "angular": "~1.2",
+        "angular-resource": "~1.2"
+      },
+      "devDependencies": {
+        "angular-mocks": "~1.2"
+      }
+
+}
