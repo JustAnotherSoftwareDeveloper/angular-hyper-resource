@@ -12,7 +12,7 @@
             "url": "https://github.com/johndgiese"
         }
     ],
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "A  port of the bower package of the same name. Hypermedia resource library for AngularJS",
     "keywords": [
         "angularjs",
